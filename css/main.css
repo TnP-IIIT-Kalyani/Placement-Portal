@@ -11,6 +11,59 @@
   --font-title: "Montserrat", sans-serif;
   --font-text: "Lato", sans-serif;
 }
+/* Default styles */
+#barchart_material {
+  display: block; /* show the chart */
+}
+
+#textbox {
+  display: none; /* hide the text box */
+}
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  #barchart_material {
+    display: none; /* hide the chart */
+  }
+
+  #textbox {
+    display: block; /* show the text box */
+  }
+}
+
+table {
+  padding-top: 10%;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(14, 57, 129);
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+}
+
+tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+td {
+  border: 1px solid rgb(14, 57, 129);
+  
+}
+
+tbody td:first-child, tbody th:first-child {
+  text-align: left;
+  
+}
+
 
 * {
   text-align: justify;
@@ -64,7 +117,7 @@ html {
   border: 2px solid rgb(20, 45, 84);
   border-radius: 10px;
   margin-bottom: 20px;
-  margin-left: 25px;
+  margin-left: 0%;
 }
 
 .heading2 {
@@ -805,7 +858,7 @@ a.brochure-link:hover {
 
 #placement-detail-1 {
   border: 1px solid #204584;
-  width: 40vw;
+  width: 35vw;
   height: 60vh;
   padding: 0 0;
   margin: 0;
@@ -823,8 +876,10 @@ a.brochure-link:hover {
 }
 
 #placement-synopsis {
-  padding: 20px 20px;
-  width: 100%;
+  /* padding: 20px 20px; */
+  width: 85vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1083,6 +1138,7 @@ a:hover {
 
   #placement-synopsis {
     flex-direction: column;
+    padding-top: 30%;
   }
 
   #about {
@@ -1458,6 +1514,7 @@ a:hover {
 
   .messagebox .img-div-mobile {
     display: flex;
+    height: 25vh;
   }
 
   #placement-detail-1 {
@@ -1512,7 +1569,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 100%) {
   .headinggs,
   .headinggs h2,
   .whyus-cont h2 {
@@ -1578,7 +1635,7 @@ ul {
 }
 img {
   max-width: 100%;
-  height: auto;
+  /* height: 20vh; */
 }
 span {
   display: inline-block;
