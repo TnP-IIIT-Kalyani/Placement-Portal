@@ -812,7 +812,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="our-team">
             <div class="picture">
-              <img class="img-fluid" src="./img/pratik.jfif">
+              <img class="img-fluid" src="./img/pratik.jpg">
             </div>
             <div class="team-content">
 
@@ -1031,11 +1031,14 @@
     var perView_1 = 6
     let totalScroll = 0
     const delay = 2400
-
+    function mobile() {
     if(window.innerWidth < 648) {
       perView = 3
       perView_1 = 3
     }
+    }
+
+    mobile();
 
     imageWrapper.style.setProperty('--per-view', perView)
     for (let i = 0; i < perView; i++) {
