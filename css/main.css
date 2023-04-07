@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo:700");
 @import url("https://fonts.googleapis.com/css?family=Hammersmith+One");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+
 :root {
   /* Colors */
   --brand-color: hsl(213, 70%, 22%);
@@ -39,7 +40,8 @@ table {
   margin-bottom: 20px;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   text-align: center;
 }
@@ -56,14 +58,12 @@ tr:nth-child(even) {
 
 td {
   border: 1px solid rgb(14, 57, 129);
-  
 }
 
-tbody td:first-child, tbody th:first-child {
+tbody td:first-child,
+tbody th:first-child {
   text-align: left;
-  
 }
-
 
 * {
   text-align: justify;
@@ -554,7 +554,6 @@ a.brochure-link:hover {
 .messagebox {
   width: 50%;
   margin: 50px 30px;
-  
 }
 
 .messagebox .title-bar {
@@ -602,7 +601,7 @@ a.brochure-link:hover {
   width: 40vw;
 }
 
-.tpoImg{
+.tpoImg {
   height: 12rem;
   border-radius: 5%;
   display: flex;
@@ -1245,9 +1244,6 @@ a:hover {
 
   #placement-synopsis {
     flex-direction: column;
-
-
-    
   }
 
   #placement-detail-1 {
@@ -1258,11 +1254,10 @@ a:hover {
     flex-direction: column-reverse;
   }
 
-  
   #about .about-text {
     width: 100%;
   }
-  
+
   #about .about-img {
     width: 100%;
     padding: 10px 30px;
@@ -1481,6 +1476,23 @@ a:hover {
     margin-top: 25px;
     padding: 10px 25px;
     text-align: left;
+  }
+.heading {
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes slidein {
+    0% {
+      margin-left: 0%;
+    }
+    50% {
+      margin-left: 300px;
+    }
+    100% {
+      margin-left: 0%;
+    }
   }
 
   #home > div {
@@ -1858,18 +1870,18 @@ p.awesome_line {
   border-radius: 30px;
 }
 
-#footer-icons{
+#footer-icons {
   text-align: center;
 }
 /* new files */
 
-div.footerIcons{
+div.footerIcons {
   display: flex;
   column-gap: 5px;
   justify-content: center;
   flex-wrap: wrap;
 }
-div.footerIcons a{
+div.footerIcons a {
   padding: 10px 12px;
   border-radius: 3px;
   font-size: 25px;
@@ -1877,18 +1889,18 @@ div.footerIcons a{
   display: inline-block;
   margin-bottom: 10px;
 }
-div.footerIcons a:hover{
+div.footerIcons a:hover {
   opacity: 0.8;
 }
-.fb{
-  background: rgb(14,57,129) ;
+.fb {
+  background: rgb(14, 57, 129);
 }
-.insta{
-  background:  rgb(14,57,129);
+.insta {
+  background: rgb(14, 57, 129);
 }
-.twitter{
-  background:  rgb(14,57,129);
+.twitter {
+  background: rgb(14, 57, 129);
 }
-.linkedin{
-  background:  rgb(14,57,129);
+.linkedin {
+  background: rgb(14, 57, 129);
 }
