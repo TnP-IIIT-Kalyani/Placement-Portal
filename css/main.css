@@ -316,6 +316,14 @@ h2 {
     width: 100% !important;
     margin: -2% -7.5% !important;
   }
+
+  .image-wrapper {
+    --per-view : 3
+  }
+
+  .image-wrapper_1 {
+    --per-view : 3
+  }
 }
 @media only screen and (max-width: 609px) {
   h3.headinggs.heading2 {
@@ -1455,45 +1463,7 @@ a:hover {
   background-color: #f7f5ec;
 }
 
-@media only screen and (max-width: 540px) {
-  .heading2 {
-    font-size: 15px;
-  }
-  #header {
-    height: 60px;
-    padding: 0px 20px;
-  }
 
-  #home {
-    flex-direction: column;
-  }
-
-  .employees-image {
-    margin: 40px 0px 20px 0px;
-  }
-
-  #home .home-text {
-    margin-top: 25px;
-    padding: 10px 25px;
-    text-align: left;
-  }
-.heading {
-    animation-duration: 8s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes slidein {
-    0% {
-      margin-left: 0%;
-    }
-    50% {
-      margin-left: 300px;
-    }
-    100% {
-      margin-left: 0%;
-    }
-  }
 
   #home > div {
     width: 100%;
@@ -1538,7 +1508,7 @@ a:hover {
   #placement-detail-1 {
     height: 70vh;
   }
-}
+
 
 /* hamburger css */
 

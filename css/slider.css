@@ -43,3 +43,18 @@ img {
 /* IMAGE */
 
 
+/* IMAGE */
+@media only screen and (max-width: 600px) {
+    img {
+      height: 270%;
+      width: 270%;
+      display: block;
+    
+    }
+    .image-wrapper_1 > * {
+        aspect-ratio: 5 / 3;
+    }
+    .image-wrapper > * {
+        aspect-ratio: 5 / 3;
+    }
+  }
