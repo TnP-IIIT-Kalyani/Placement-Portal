@@ -47,7 +47,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  margin:2rem 5rem;
+  margin:2rem 6rem;
   justify-content: center;
 }
 
