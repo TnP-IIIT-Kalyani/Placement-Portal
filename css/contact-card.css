@@ -1,71 +1,88 @@
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    width: 25vw;
-    margin: 2rem;
-    padding: 1rem;
-    text-align: center;
-    font-family: arial;
-  }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  width: 25vw;
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: arial;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  animation-delay: 1s;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #bda68a;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #937148;
+}
+
+h2 {
+  font-family: calibri;
+}
+
+#coordinators {
   
+  bottom: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin:2rem 5rem;
+  justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1090px) {
+  .card {
+    width: 40vw;
+    max-width: none;
+  }
   .card:hover {
-    transform: scale(1.05);
-    animation-delay: 1s;
-  }
-  
-  .title {
-    color: grey;
-    font-size: 18px;
-  }
-  
-  button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #bda68a;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #937148;
-  }
-  
-  h2 {
-    font-family: calibri;
+      transform: scale(0);
   }
   
   #coordinators {
-    position: relative;
-    bottom: auto;
-    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem;
+    height: auto;
+  }
+} 
+@media screen and (max-width: 769px){
+  .card {
+    width: 80vw;
+    max-width: none;
+  }
+  .card:hover {
+    transform: scale(0);
+  }
+
+  #coordinators {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 5rem;
-    justify-content: center;
-  }
-  
-  /* Responsive Adjustments */
-  @media screen and (max-width: 768px) {
-    .card {
-      width: 80vw;
-      max-width: none;
-    }
-    .card:hover {
-        transform: scale(0);
-    }
+    flex-direction: column;
     
-    #coordinators {
-      flex-direction: column;
-      margin: 2rem;
-      height: auto;
-    }
+    margin: 2rem;
+    height: auto;
   }
-  
+}
+
