@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 
@@ -16,36 +15,36 @@
   <link rel="stylesheet" href="css/contact-card.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawChart);
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['bar'] });
+    google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['BATCH', 'Highest Package in LPA',  'Average Package in LPA', ],
-          ['2014-18', 10, 3],
-          ['2015-19', 10, 3.4],
-          ['2016-20', 17,  6.2],
-          ['2017-21', 17,  8],
-          ['2018-22', 15, 10.73],
-          ['2019-23', 26.41, 12.7]
-        ]);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['BATCH', 'Highest Package in LPA', 'Average Package in LPA',],
+        ['2014-18', 10, 3],
+        ['2015-19', 10, 3.4],
+        ['2016-20', 17, 6.2],
+        ['2017-21', 17, 8],
+        ['2018-22', 15, 10.73],
+        ['2019-23', 26.41, 12.7]
+      ]);
 
-        var options = {
-          chart: {
-            title: 'Placement Statistics',
-            
-          },
-          bars: 'vertical' // Required for Material Bar Charts.
-        };
+      var options = {
+        chart: {
+          title: 'Placement Statistics',
 
-        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+        },
+        bars: 'vertical' // Required for Material Bar Charts.
+      };
 
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-      }
-    </script>
-    
+      var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
+  </script>
+
 </head>
 
 <body>
@@ -104,13 +103,13 @@
     <img src="img/background.svg" class="home-background">
     <div>
       <div class="home-text">
-        
+
         <span class="heading" style="font-size: 35px;"><br>Training and Placement Cell, </br> IIIT Kalyani</span><br>
-        
-          <a href="img/brochure/placement_brochure_2022.pdf" target="_blank" class="brochure-link">Placement
-            Brochure&nbsp;&nbsp;<i class="fas fa-download"></i></a>
-          <br>
-          <!-- <a href="#" class="download-link">Placement Invitation&nbsp;&nbsp;<i class="fas fa-download"></i></a> -->
+
+        <a href="img/brochure/placement_brochure_2022.pdf" target="_blank" class="brochure-link">Placement
+          Brochure&nbsp;&nbsp;<i class="fas fa-download"></i></a>
+        <br>
+        <!-- <a href="#" class="download-link">Placement Invitation&nbsp;&nbsp;<i class="fas fa-download"></i></a> -->
       </div>
     </div>
     <div class="employees-image"
@@ -123,11 +122,21 @@
     <div class="about-text">
       <h3 class="headinggs heading2">Indian Institute of Information Technology Kalyani</h3>
       <p style="line-height: 180%; font-size: 1rem; margin-top: 10%;">
-        A Memorandum of Understanding (MoU) was signed in 2014 between the Indian government, West Bengal government, and industry partners (namely Coal India Limited, Rolta Foundation, and Webel) to establish IIIT Kalyani under the Public Private Partnership (PPP) model. Since 2017, IIIT Kalyani has become an Institute of National Importance.
+        A Memorandum of Understanding (MoU) was signed in 2014 between the Indian government, West Bengal government,
+        and industry partners (namely Coal India Limited, Rolta Foundation, and Webel) to establish IIIT Kalyani under
+        the Public Private Partnership (PPP) model. Since 2017, IIIT Kalyani has become an Institute of National
+        Importance.
         <br> <br>
-        The Institute currently offers a 4-year B.Tech programme in Computer Science and Engineering, with the goal of providing high-quality technical education to students and equipping them with the necessary skills to tackle complex industry problems in the modern world. Its faculty members, who are young and dynamic doctorates from prestigious institutions and universities in India and abroad, guide over 50 research scholars towards obtaining their PhD degrees. As a result, the Institute has developed into a hub of research excellence over time.
+        The Institute currently offers a 4-year B.Tech programme in Computer Science and Engineering, with the goal of
+        providing high-quality technical education to students and equipping them with the necessary skills to tackle
+        complex industry problems in the modern world. Its faculty members, who are young and dynamic doctorates from
+        prestigious institutions and universities in India and abroad, guide over 50 research scholars towards obtaining
+        their PhD degrees. As a result, the Institute has developed into a hub of research excellence over time.
         <br> <br>
-        IIIT Kalyani seeks substantial support from major Indian industries. Several major IT companies, including Wipro, TCS, Cognizant, IBM, PWC, Yellowclass, Goldman Sachs, ShareChat, OLA, Mihup, TCG, Deloitte, Jio, Capgemini, MAQ Software, and others, have already hired students from this Institute. The Institute offers a serene, peaceful, and productive atmosphere for studying, with a student-friendly environment.
+        IIIT Kalyani seeks substantial support from major Indian industries. Several major IT companies, including
+        Wipro, TCS, Cognizant, IBM, PWC, Yellowclass, Goldman Sachs, ShareChat, OLA, Mihup, TCG, Deloitte, Jio,
+        Capgemini, MAQ Software, and others, have already hired students from this Institute. The Institute offers a
+        serene, peaceful, and productive atmosphere for studying, with a student-friendly environment.
       </p>
     </div>
     <div class="about-img">
@@ -210,21 +219,27 @@
             <div class="item"> <span class="icon feature_box_col_four" style="text-align:center;"><i
                   class="fa fa-database" style="font-size:40px;"></i></span>
               <h6 style="text-align:center;">Strong Industry Interface</h6>
-              <p>IIIT Kalyani has a strong, active and growing interface with business and industry, with experts from a range of leading companies and thought leaders of IT Industry delivering regular guest lectures and serving as members of various advisory boards.</p>
+              <p>IIIT Kalyani has a strong, active and growing interface with business and industry, with experts from a
+                range of leading companies and thought leaders of IT Industry delivering regular guest lectures and
+                serving as members of various advisory boards.</p>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="item"> <span class="icon feature_box_col_five" style="text-align:center;"><i
                   class="fa fa-upload" style="font-size:40px;"></i></span>
               <h6 style="text-align:center;">Projects</h6>
-              <p>Students are encouraged to take up projects on contemporary topics as a part of their independent study whch includes image processing, Cryptography, Artificial Intelligence And Machine Learning. Arrangements will be made for practical training on projects of leading companies. </p>
+              <p>Students are encouraged to take up projects on contemporary topics as a part of their independent study
+                whch includes image processing, Cryptography, Artificial Intelligence And Machine Learning. Arrangements
+                will be made for practical training on projects of leading companies. </p>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="item"> <span class="icon feature_box_col_six" style="text-align:center;"><i class="fa fa-camera"
                   style="font-size:40px;"></i></span>
               <h6 style="text-align:center;">Achievements</h6>
-              <p>Selection in GOOGLE SUMMER OF CODE, Teams in ICPC REGIONALS, Selections in SMART INDIA HACKATHON, GOOGLE SUMMER OF CODE & CODE-IN MENTOR Selections, GOOGLE BUILD FOR DIGITAL INDIA Selections, MLH FELLOWSHIP Selection (SPONSORED BY GITHUB).</p>
+              <p>Selection in GOOGLE SUMMER OF CODE, Teams in ICPC REGIONALS, Selections in SMART INDIA HACKATHON,
+                GOOGLE SUMMER OF CODE & CODE-IN MENTOR Selections, GOOGLE BUILD FOR DIGITAL INDIA Selections, MLH
+                FELLOWSHIP Selection (SPONSORED BY GITHUB).</p>
             </div>
           </div>
         </div>
@@ -239,7 +254,7 @@
     <h1 class="headinggs small-heading" style="width: 90%; margin:0 auto;">
       Past Recruiters
     </h1>
-    <div class="image-container" >
+    <div class="image-container">
       <div class="image-wrapper">
         <div>
           <img src="./img/pngwing.com.png" alt="" height="70%" width="70%">
@@ -259,13 +274,13 @@
         <div>
           <img src="./img/amazon-n.png" alt="" height="100%" width="100%">
         </div>
-  
+
         <div class="slide">
           <img src="./img/sqaudstack.jpg" alt="" height="70%" width="70%">
         </div>
-  
+
         <div class="slide">
-          <img src="./img/cognizant.jpeg" alt="" >
+          <img src="./img/cognizant.jpeg" alt="">
         </div>
         <div class="slide">
           <img src="./img/cisco.png" alt="" height="70%" width="70%">
@@ -273,11 +288,11 @@
         <div class="slide">
           <img src="./img/accolite.png" alt="" height="90%" width="80%">
         </div>
-  
+
         <div class="slide">
           <img src="./img/gobudgo.jpg" alt="" height="80%" width="40%">
         </div>
-  
+
         <div class="slide">
           <img src="./img/infolo.jpg" alt="" height="80%" width="60%">
         </div>
@@ -287,7 +302,7 @@
         <div class="slide">
           <img src="./img/jio.png" alt="" height="90%" width="90%">
         </div>
-  
+
         <div class="slide">
           <img src="./img/maq.png" alt="" height="100%" width="100%">
         </div>
@@ -295,12 +310,12 @@
           <img src="./img/mihup.png" alt="" height="80%" width="80%">
         </div>
         <div class="slide">
-          <img src="./img/tata1mg.png" alt="" >
+          <img src="./img/tata1mg.png" alt="">
         </div>
-  
-  
+
+
         <div class="slide">
-          <img src="./img/oneshot.jpg" alt="" >
+          <img src="./img/oneshot.jpg" alt="">
         </div>
         <div class="slide">
           <img src="./img/wipro.png" alt="">
@@ -309,157 +324,157 @@
           <img src="./img/sharechat.png" alt="" height="80%" width="80%">
         </div>
       </div>
-  
+
       <div class="image-wrapper_1">
         <div class="slide">
-          <img src="./img/314e.png" alt=""  height="50%" width="50%">
+          <img src="./img/314e.png" alt="" height="50%" width="50%">
         </div>
         <div class="slide">
-          <img src="./img/adecco_old.png" alt=""  height="50%" width="50%">
+          <img src="./img/adecco_old.png" alt="" height="50%" width="50%">
         </div>
         <div class="slide">
-          <img src="./img/zensar.png" alt=""  height="50%" width="50%">
+          <img src="./img/zensar.png" alt="" height="50%" width="50%">
         </div>
         <div class="slide">
-          <img src="./img/vap.png" alt=""  height="50%" width="50%">
+          <img src="./img/vap.png" alt="" height="50%" width="50%">
         </div>
         <div class="slide">
-          <img src="./img/trigent.jpg" alt=""  height="50%" width="50%">
+          <img src="./img/trigent.jpg" alt="" height="50%" width="50%">
         </div>
         <div class="slide">
-          <img src="./img/vassarlab.png" alt=""  height="50%" width="50%" >
+          <img src="./img/vassarlab.png" alt="" height="50%" width="50%">
         </div>
         <div class="slide">
-          <img src="./img/thrillophilia.png" alt="" height="50%" width="50%" >
+          <img src="./img/thrillophilia.png" alt="" height="50%" width="50%">
         </div>
         <div class="slide">
-          <img src="./img/tele.png" alt="" height="50%" width="50%" >
+          <img src="./img/tele.png" alt="" height="50%" width="50%">
         </div>
         <div class="slide">
-          <img src="./img/tcGDigital.jpeg" alt=""  height="50%" width="50%">
+          <img src="./img/tcGDigital.jpeg" alt="" height="50%" width="50%">
         </div>
         <div class="slide">
-          <img src="./img/Tanzen_intern.png" alt="" height="50%" width="50%" >
+          <img src="./img/Tanzen_intern.png" alt="" height="50%" width="50%">
         </div>
         <div class="slide">
-          <img src="./img/sudLife_intern.jpg" alt="" >
+          <img src="./img/sudLife_intern.jpg" alt="">
         </div>
         <div class="slide">
-          <img src="./img/softech.png" alt="" >
+          <img src="./img/softech.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/smartprix.png" alt="" >
+          <img src="./img/smartprix.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/shopconnect.jpeg" alt="" >
+          <img src="./img/shopconnect.jpeg" alt="">
         </div>
         <div class="slide">
-          <img src="./img/ritwik.jpeg" alt="" >
+          <img src="./img/ritwik.jpeg" alt="">
         </div>
         <div class="slide">
-          <img src="./img/redsky_technologies.png" alt="" >
+          <img src="./img/redsky_technologies.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/quolum.png" alt="" >
+          <img src="./img/quolum.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/publicSapient.png" alt="" >
+          <img src="./img/publicSapient.png" alt="">
         </div>
-  
+
         <div class="slide">
-          <img src="./img/planentspark.png" alt="" >
-        </div>
-        <div class="slide">
-          <img src="./img/octro_intern.png" alt="" >
+          <img src="./img/planentspark.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/natinal_lib.png" alt="" >
+          <img src="./img/octro_intern.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/nagarro.png" alt="" >
+          <img src="./img/natinal_lib.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/mindfire.png" alt="" >
+          <img src="./img/nagarro.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/loyalty_jaggernaut.png" alt="" >
+          <img src="./img/mindfire.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/kickdrum.png" alt="" >
+          <img src="./img/loyalty_jaggernaut.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/infolo.jpg" alt="" >
+          <img src="./img/kickdrum.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/fossee.png" alt="" >
+          <img src="./img/infolo.jpg" alt="">
         </div>
         <div class="slide">
-          <img src="./img/ericsson.png" alt="" >
+          <img src="./img/fossee.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/elucidata.png" alt="" >
+          <img src="./img/ericsson.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/dotpe.png" alt="" >
+          <img src="./img/elucidata.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/deltaX.png" alt="" >
+          <img src="./img/dotpe.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/cuvette.png" alt="" >
+          <img src="./img/deltaX.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/cogoport.png" alt="" >
+          <img src="./img/cuvette.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/clevertap.png" alt="" >
+          <img src="./img/cogoport.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/cdot.png" alt="" >
+          <img src="./img/clevertap.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/brigosha.jpeg" alt="" >
+          <img src="./img/cdot.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/beehyv.png" alt="" >
+          <img src="./img/brigosha.jpeg" alt="">
         </div>
         <div class="slide">
-          <img src="./img/Affine_Analytics.png" alt="" >
+          <img src="./img/beehyv.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/accolite.png" alt="" >
+          <img src="./img/Affine_Analytics.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/addverb.jpeg" alt="" >
+          <img src="./img/accolite.png" alt="">
         </div>
         <div class="slide">
-          <img src="./img/adecco.png" alt="" >
+          <img src="./img/addverb.jpeg" alt="">
         </div>
-  
-  
-  
-  
-  
-  
         <div class="slide">
-          <img src="./img/infolo.jpg" alt="" >
+          <img src="./img/adecco.png" alt="">
         </div>
-  
-  
-  
-  
+
+
+
+
+
+
         <div class="slide">
-          <img src="./img/mindfire.png" alt="" >
+          <img src="./img/infolo.jpg" alt="">
         </div>
-  
-  
-  
-  
-  
-  
+
+
+
+
+        <div class="slide">
+          <img src="./img/mindfire.png" alt="">
+        </div>
+
+
+
+
+
+
       </div>
     </div>
-      
+
   </div>
 
   <div id="placement-record" class="section">
@@ -473,7 +488,7 @@
               <caption
                 style="font-size: 25px; font-weight: none; text-align: center; background-color: #204584; color: white; padding: 7px; text-transform: uppercase; width: 100%; caption-side: top;">
                 Placement Statistics</caption>
-                
+
               <tbody>
                 <tr class="row100 body">
                   <td class="cell100 column1">No. of Students registered</td>
@@ -519,10 +534,10 @@
 
 
 
-                
+
               </tbody>
             </table>
-           
+
           </div>
         </div>
       </div>
@@ -569,17 +584,19 @@
             </tr>
           </tbody>
         </table>
-        
+
       </div>
-      
+
     </div>
     <!-- <div id="placement-chart">
       <canvas id="mycanvas" width="700px" height="700px"></canvas>
     </div> -->
     <div class="placement-points">
-      
+
     </div>
-    <p style="padding: 0.5rem; text-align: center; font-weight: bold;">Placement activities for the 2023 batch passout students are not over yet. We expect on-campus placements for most of the students by the end of the current academic year</p>
+    <p style="padding: 0.5rem; text-align: center; font-weight: bold;">Placement activities for the 2023 batch passout
+      students are not over yet. We expect on-campus placements for most of the students by the end of the current
+      academic year</p>
     <div class="passout">
       <a href="placement_stats/placement19-20.pdf" target="_blank" class="download-link">Batch 2019 - 2023</a>
       <a href="placement_stats/Batch2018-2022.pdf" target="_blank" class="download-link">Batch 2018 - 2022</a>
@@ -587,9 +604,9 @@
       <a href="placement_stats/placement19-20.pdf" target="_blank" class="download-link">Batch 2016 - 2020</a>
       <a href="placement_stats/placement18-19.pdf" target="_blank" class="download-link">Batch 2015 - 2019</a>
       <a href="placement_stats/placement17-18.pdf" target="_blank" class="download-link">Batch 2014 - 2018</a>
-      
+
     </div>
-   
+
   </div>
 
   <hr>
@@ -642,7 +659,7 @@
   </div>
   <div class="bera-class">
     <div class="messagebox" style="width: 100%;">
-      <div class="title-bar" >
+      <div class="title-bar">
         From the Director's Desk
       </div>
       <div class="content">
@@ -685,6 +702,9 @@
     </div>
 
   </div>
+
+  
+
 
   <div class="bera-class">
     <div class="messagebox" style="width: 100%;">
@@ -729,7 +749,8 @@
             <img class="tpoImg" src="img\pratik.jpg">
           </div>
           <div style="margin-top: 5px; display: flex; justify-content: center; flex-direction: column;">
-            <div style="font-size: 15px; font-weight: bold; margin-top: 1rem; text-align: center;">Dr. Pratik Chakraborty</div>
+            <div style="font-size: 15px; font-weight: bold; margin-top: 1rem; text-align: center;">Dr. Pratik
+              Chakraborty</div>
             <div style="text-align: center;">Faculty In-charge,</div>
             <div style="text-align: center;">Training and Placement Cell,</div>
             <div style="text-align: center;"> IIIT Kalyani </div>
@@ -747,6 +768,60 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="bera-class">
+    <div class="messagebox" style="width: 100%;">
+      <div class="title-bar">
+        From the Faculty Incharge (TnP Cell)
+      </div>
+      <div class="content">
+        <div class="img-div-mobile">
+          <img src="img/Chimony-Ghosh.jpg" class="center">
+          <div style="font-size: 15px; margin-top: -30px;">
+            <div style="font-size: 15px; font-weight: bold;">Dr. Chinmoy Ghosh
+            </div>
+            <div> Faculty Incharge (TnP Cell), IIIT Kalyani </div>
+          </div>
+        </div>
+        <div class="text">
+          Greetings from the IIIT, Kalyani, an Institute of National Importance!!!
+          It is with great pleasure that I extend a warm invitation to your esteemed organization to participate in our
+          Campus Placement Drive for the academic year 2024-2025. As the Assistant Registrar of IIIT Kalyani, I am
+          thrilled to showcase the bright and innovative minds that make up our student body across various disciplines.
+          These students are not only adept in their technical skills but are also ready to apply their knowledge and
+          creativity to contribute effectively to your esteemed organization.
+
+          At IIIT Kalyani, we pride ourselves on maintaining an academic curriculum that is rigorously aligned with the
+          requirements of the modern IT industry.Our students, selected through the highly competitive All India JEE
+          examination, are among the top performers nationally. They come equipped with a solid foundation in technical
+          knowledge complemented by problem-solving skills and an innovative approach to technology. Moreover, students
+          at IIIT Kalyani are encouraged to engage in practical learning opportunities such as internships and live
+          projects with leading corporations. Our students have made significant contributions in various national and
+          international forums, illustrated by their innovations and research.
+
+          We invite you to engage with this talent pool through
+          our intended recruitment activities including pre-place-
+          ment talks, internships, and final placements, starting
+          from July, 2024. Join us in harnessing the potential of
+          our students, who are eager to drive success and
+          innovation in your organization. We look forward
+          to having you on our campus and hope to establish a
+          rewarding partnership.
+        </div>
+        <!-- <div>
+            
+          </div> -->
+        <div class="img-div">
+          <img src="img/Chimony-Ghosh.jpg" class="center" style="width: 70%; height: max-content; margin: 15%;">
+          <div>
+            <div style="font-size: 15px; font-weight: bold; text-align:center;">Dr. Chinmoy Ghosh</div>
+            <div style="text-align: center;"> Faculty Incharge (TnP Cell), IIIT Kalyani </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <!-- Bera Version -->
@@ -790,349 +865,359 @@
   </div>
 
 
-<div id="coordinators-part">
-  <h2 class="headinggs" style="width: 90%; margin:0 auto;">Student Coordinators</h2>
-<div  id="coordinators">
-
-    
-  <div class="card">
-    <img src="img/coord/anuj.jpg" alt="John" style="width:100%">
-    <h2 style="padding-top: 2rem;"> Anuj Kirodia      </h2>
-    <p class="title">Student Coordinator</p>
-    <p>IIIT Kalyani</p>
-    <div style="margin: 24px 0;">
-     
-      <a href="https://www.linkedin.com/in/anuj-kirodia-4a28921b9/"><i class="fa fa-linkedin"></i></a>  
-    </div>   
-  </div>      
-
-    
-  <div class="card">
-    <img src="img/coord/ali.jpeg" alt="John" style="width:100%">
-    <h2 style="padding-top: 2rem;">Ali Asad Quasim</h2>
-    <p class="title">Student Coordinator</p>
-    <p>IIIT Kalyani</p>
-    <div style="margin: 24px 0;">
-     
-      <a href="https://www.linkedin.com/in/ali-asad-quasim/"><i class="fa fa-linkedin"></i></a>  
-    </div>   
-  </div>      
-
-    
-  <div class="card">
-    <img src="img/coord/aman.png" alt="John" style="width:100%">
-    <h2 style="padding-top: 2rem;">Aman Yadav</h2>
-    <p class="title">Student Coordinator</p> 
-    <p>IIIT Kalyani</p>
-    <div style="margin: 24px 0;">
-      
-      <a href="https://www.linkedin.com/in/amanyadav13apr/"><i class="fa fa-linkedin"></i></a>  
-    </div>   
-  </div>
-    
-  <div class="card">
-    <img src="img/coord/yash (2).jpg" alt="John" style="width:100%">
-    <h2 style="padding-top: 2rem;">Yashraj Singh</h2>
-    <p class="title">Student Coordinator</p>
-    <p>IIIT Kalyani</p>
-    <div style="margin: 24px 0;">
-      
-      <a href="https://www.linkedin.com/in/yashraj-singh-02/"><i class="fa fa-linkedin"></i></a>  
-    </div>   
-  </div>
-</div>
+  <div id="coordinators-part">
+    <h2 class="headinggs" style="width: 90%; margin:0 auto;">Student Coordinators</h2>
+    <div id="coordinators">
 
 
-  <!-- CONTACT US -->
-  <div id="contactus">
-    <h2 class="headinggs" style="width: 90%; margin:0 auto;">Contact Us</h2>
-    <div class="container" style="margin-top:2%; ">
+      <div class="card">
+        <img src="img/coord/anuj.jpg" alt="John" style="width:100%">
+        <h2 style="padding-top: 2rem;"> Anuj Kirodia </h2>
+        <p class="title">Student Coordinator</p>
+        <p>IIIT Kalyani</p>
+        <div style="margin: 24px 0;">
+
+          <a href="https://www.linkedin.com/in/anuj-kirodia-4a28921b9/"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
 
 
-      <div class="profile-sec row">
-        <div class="col-lg-4 col-md-6">
-          <div class="our-team">
-            <div class="picture">
-              <img class="img-fluid" src="./img/pratik.jpg">
+      <div class="card">
+        <img src="img/coord/ali.jpeg" alt="John" style="width:100%">
+        <h2 style="padding-top: 2rem;">Ali Asad Quasim</h2>
+        <p class="title">Student Coordinator</p>
+        <p>IIIT Kalyani</p>
+        <div style="margin: 24px 0;">
+
+          <a href="https://www.linkedin.com/in/ali-asad-quasim/"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img src="img/coord/aman.png" alt="John" style="width:100%">
+        <h2 style="padding-top: 2rem;">Aman Yadav</h2>
+        <p class="title">Student Coordinator</p>
+        <p>IIIT Kalyani</p>
+        <div style="margin: 24px 0;">
+
+          <a href="https://www.linkedin.com/in/amanyadav13apr/"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/coord/yash (2).jpg" alt="John" style="width:100%">
+        <h2 style="padding-top: 2rem;">Yashraj Singh</h2>
+        <p class="title">Student Coordinator</p>
+        <p>IIIT Kalyani</p>
+        <div style="margin: 24px 0;">
+
+          <a href="https://www.linkedin.com/in/yashraj-singh-02/"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CONTACT US -->
+    <div id="contactus">
+      <h2 class="headinggs" style="width: 90%; margin:0 auto;">Contact Us</h2>
+      <div class="container" style="margin-top:2%; ">
+
+
+        <div class="profile-sec row">
+          <div class="col-lg-4 col-md-6">
+            <div class="our-team">
+              <div class="picture">
+                <img class="img-fluid" src="./img/pratik.jpg">
+              </div>
+              <div class="team-content">
+
+                <h3 class="name">Pratik Chakraborty</h3>
+                <h4 class="title">Faculty In-Charge <br>Training And Placement Cell<br> IIIT Kalyani</h4>
+                <h6 style="margin-top:5px;"><a href="mailto:pratik@iiitkalyani.ac.in">
+                    <li class="fas fa-envelope"> pratik@iiitkalyani.ac.in</li>
+                  </a></h6>
+                <h6>
+                  <li class="fas fa-phone"> +91 8168824544</li>
+                </h6>
+
+
+              </div>
+              <ul class="social" style="text-align:center;">
+                <li><a href="https://www.linkedin.com/in/pratik-chakraborty-6a0a0773/" class="fa fa-linkedin"
+                    aria-hidden="true" target="_blank"></a></li>
+                <li><a href="mailto:pratik@iiitkalyani.ac.in" class="fa fa-google-plus" aria-hidden="true"></a></li>
+              </ul>
             </div>
-            <div class="team-content">
-
-              <h3 class="name">Pratik Chakraborty</h3>
-              <h4 class="title">Faculty In-Charge <br>Training And Placement Cell<br> IIIT Kalyani</h4>
-              <h6 style="margin-top:5px;"><a href="mailto:pratik@iiitkalyani.ac.in">
-                  <li class="fas fa-envelope"> pratik@iiitkalyani.ac.in</li>
-                </a></h6>
-              <h6>
-                <li class="fas fa-phone"> +91 8168824544</li>
-              </h6>
+          </div>
 
 
+          <div class="col-lg-4 col-md-6">
+            <div class="our-team">
+              <div class="picture">
+                <img class="img-fluid" src="img\SANJAY.jpg">
+              </div>
+              <div class="team-content">
+                <h3 class="name">Sanjay Chatterji</h3>
+                <h4 class="title">Training and Placement Officer<br>Training And Placement Cell<br> IIIT Kalyani</h4>
+                <h6 style="margin-top:5px;"><a href="mailto:sanjayc@iiitkalyani.ac.in">
+                    <li class="fas fa-envelope"> sanjayc@iiitkalyani.ac.in</li>
+                  </a></h6>
+                <h6>
+                  <li class="fas fa-phone"> +91 9740122889</li>
+                </h6>
+              </div>
+              <ul class="social" style="text-align:center;">
+                <li><a href="https://www.linkedin.com/in/sanjay-chatterji-936a2523/" class="fa fa-linkedin"
+                    aria-hidden="true" target="_blank"></a></li>
+                <li><a href="mailto:sanjayc@iiitkalyani.ac.in" class="fa fa-google-plus" aria-hidden="true"></a></li>
+              </ul>
             </div>
-            <ul class="social" style="text-align:center;">
-              <li><a href="https://www.linkedin.com/in/pratik-chakraborty-6a0a0773/" class="fa fa-linkedin" aria-hidden="true" target="_blank"></a></li>
-              <li><a href="mailto:pratik@iiitkalyani.ac.in" class="fa fa-google-plus" aria-hidden="true"></a></li>
-            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="our-team">
+              <div class="picture">
+                <img class="img-fluid" src="img/contactus_tnp.png">
+
+              </div>
+              <div class="team-content">
+                <h4 class="name" style="text-align: left;"> Training and Placement</h4>
+                <h4 class="title">Training & Placement Cell<br> IIIT Kalyani</h4>
+                <h6 style="margin-top:5px;"><a href="mailto:tnp@iiitkalyani.ac.in">
+                    <li class="fas fa-envelope" aria-hidden="true"> tnp@iiitkalyani.ac.in</li>
+                  </a></h6>
+                <h6 style="margin-top:5px; font-size: 8px !important"><a
+                    href="mailto:studentcoordinator_placement@iiitkalyani.ac.in">
+                    <li class="fas fa-envelope" aria-hidden="true"> studentcoordinator_placement<br>@iiitkalyani.ac.in
+                    </li>
+                  </a></h6>
+              </div>
+              <ul class="social" style="text-align:center;">
+
+
+                <li><a href="https://www.linkedin.com/in/tnpiniiitkalyani/" class="fa fa-linkedin" aria-hidden="true"
+                    target="_blank"></a></li>
+                <li><a href="mailto:tnp@iiitkalyani.ac.in" class="fa fa-google-plus" aria-hidden="true"></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        </button>
+      </div>
+    </div>
+
+
+    <div id="footer">
+      <div class="heading-footer" style="align-items: center;">
+        <h1 class="fot-head" style="color: whitesmoke;">
+          Placement Cell
+        </h1>
+      </div>
+      <h4 style="text-align: center; color: white; ">Indian Institute Of Information Technology, Kalyani</h4>
+      <h6 style="text-align: center; color: white; "> Webel IT Park, Near Buddha Park, Kalyani – 741235. Nadia, West
+        Bengal</h6>
+      <div id="footer-container-down">
+        <div id="footer-address" class="flex-footer">
+          <span class="footer-subsection-heading" style="width: 100%; text-align: center;">
+
+          </span>
+          <div class="footer-subsection-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.7124704321814!2d88.43170931534432!3d22.960814024394352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f894fc95000001%3A0x56bfd0b3bdadb903!2sIndian%20Institute%20of%20Information%20Technology%20Kalyani!5e0!3m2!1sen!2sin!4v1678731580741!5m2!1sen!2sin"
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div id="footer-quick-links" class="flex-footer" style="margin-top: 100px;">
+          <span class="footer-subsection-heading" style="width: 100%; text-align: center;">
+            QUICK LINKS
+          </span>
+          <div class="footer-subsection-text">
+            <a href="http://iiitkalyani.ac.in/php/e-Brochure.php" target="_blank" rel="noopener noreferrer">
+              Placement Brochure</a></br>
+            <a href="http://iiitkalyani.ac.in/newfacultypages/faculty1.php" target="_blank"
+              rel="noopener noreferrer">Faculty Members</a></br>
+            <a href="http://iiitkalyani.ac.in/php/administration.php" target="_blank"
+              rel="noopener noreferrer">Administrative Body</a></br>
+          </div>
+        </div>
+        <div id="footer-explore" class="flex-footer" style="margin-top: 100px" ;>
+          <span class="footer-subsection-heading" style="width: 100%; text-align: center;">
+            EXPLORE
+          </span>
+          <div class="footer-subsection-text">
+            <a href="http://iiitkalyani.ac.in/php/Facilities_landing_page-v6.php" target="_blank"
+              rel="noopener noreferrer">Facilities</a></br>
+            <a href="https://iiitkalyani.ac.in/php/studentachievement.php" target="_blank" rel="noopener noreferrer">
+              Student's Achievements</a></br>
+            <a href="https://iiitkalyani.ac.in/php/Academic_cal.php" target="_blank" rel="noopener noreferrer">Academic
+              Calendar</a></br>
+            <a href="https://iiitkalyani.ac.in/php/proj_spons.php" target="_blank" rel="noopener noreferrer">
+              Sponsored Projects</a></br>
+            <a href="http://iiitkalyani.ac.in/php/reach_iiit_kalyani.php" target="_blank" rel="noopener noreferrer">How
+              to
+              reach IIIT Kalyani</a></br>
+          </div>
+        </div>
+        <div id="footer-contact-us" class="flex-footer" style="margin-top: 100px;" ;>
+          <span class="footer-subsection-heading" style="width: 100%; text-align: center; ;">
+            CONTACT US
+          </span>
+          <div class="footer-subsection-text">
+            <a href="mailto:tnp@iiitkalyani.ac.in">Placement Cell : tnp@iiitkalyani.ac.in</a></br>
+            <a href="mailto:studentcoordinator_placement@iiitkalyani.ac.in">Contact No : +91 8168824544</a></br>
+          </div>
+          <div class="footerIcons">
+            <a href="https://www.facebook.com/iiitkalyani/" class="fb"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sports_iiitkalyani/" class="insta"><i class="fa fa-instagram"></i></a>
+            <a hre="https://twitter.com/iiit_kalyani?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/school/indian-institute-of-information-technology-kalyani/mycompany/"
+              class="linkedin"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer-credits" style="font-size: smaller;">
+        Copyright &copy; 2023 IIIT Kalyani. All rights reserved
+      </div>
+    </div>
+
+
+
+
+
+    <div class="complete-page-overlay hidden">
+      <div class="form-box login-box">
+        <div class="close-bar">
+          <a href="javascript:void(0)" onclick="closeForm()"><i class="fas fa-times"></i></a>
+        </div>
+
+        <div class="tab-bar">
+          <div class="tab active" onclick="switchToTabPane(this, 0)">Company</div>
+          <div class="tab" onclick="switchToTabPane(this, 1)">Student</div>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane" data-paneid="0" style="padding: 40px 50px; text-align: center;">
+            <img src="img/enterprise.png"
+              style="user-select:none; width: 80px; height: 80px; margin-bottom: 10px; padding: 10px; border: 1.5px solid rgb(32, 67, 128); border-radius : 5px;">
+            <input type="textbox" class="textbox" placeholder="Company Email" style="margin: 10px 0px; width: 100%;">
+            <input type="password" class="textbox" placeholder="Password" style="margin: 10px 0px; width: 100%;">
+            <input type="button" class="button" onclick="companySignUp()" style="width:100%; margin: 10px 0px;"
+              value="Login">
+          </div>
+          <div class="tab-pane" data-paneid="1" style="display: none; padding: 40px 50px; text-align: center;">
+            <img src="img/graduate.png"
+              style="user-select:none; width: 80px; height: 80px; margin-bottom: 10px; padding: 10px; border: 1.5px solid rgb(32, 67, 128); border-radius : 5px;">
+            <input type="textbox" class="textbox" placeholder="Student Email" style="margin: 10px 0px; width: 100%;">
+            <input type="password" class="textbox" placeholder="Password" style="margin: 10px 0px; width: 100%;">
+            <input type="button" class="button" onclick="companySignUp()" style="width:100%; margin: 10px 0px;"
+              value="Login">
           </div>
         </div>
 
-
-        <div class="col-lg-4 col-md-6">
-          <div class="our-team">
-            <div class="picture">
-              <img class="img-fluid" src="img\SANJAY.jpg">
-            </div>
-            <div class="team-content">
-              <h3 class="name">Sanjay Chatterji</h3>
-              <h4 class="title">Training and Placement Officer<br>Training And Placement Cell<br> IIIT Kalyani</h4>
-              <h6 style="margin-top:5px;"><a href="mailto:sanjayc@iiitkalyani.ac.in">
-                  <li class="fas fa-envelope"> sanjayc@iiitkalyani.ac.in</li>
-                </a></h6>
-              <h6>
-                <li class="fas fa-phone"> +91 9740122889</li>
-              </h6>
-            </div>
-            <ul class="social" style="text-align:center;">
-              <li><a href="https://www.linkedin.com/in/sanjay-chatterji-936a2523/" class="fa fa-linkedin" aria-hidden="true" target="_blank"></a></li>
-              <li><a href="mailto:sanjayc@iiitkalyani.ac.in" class="fa fa-google-plus" aria-hidden="true"></a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="our-team">
-            <div class="picture">
-              <img class="img-fluid" src="img/contactus_tnp.png">
-
-            </div>
-            <div class="team-content">
-              <h4 class="name" style="text-align: left;"> Training and Placement</h4>
-              <h4 class="title">Training & Placement Cell<br> IIIT Kalyani</h4>
-              <h6 style="margin-top:5px;"><a href="mailto:tnp@iiitkalyani.ac.in">
-                  <li class="fas fa-envelope" aria-hidden="true"> tnp@iiitkalyani.ac.in</li>
-                </a></h6>
-              <h6 style="margin-top:5px; font-size: 8px !important"><a href="mailto:studentcoordinator_placement@iiitkalyani.ac.in">
-                  <li class="fas fa-envelope" aria-hidden="true"> studentcoordinator_placement<br>@iiitkalyani.ac.in</li>
-                </a></h6>
-            </div>
-            <ul class="social" style="text-align:center;">
-
-
-              <li><a href="https://www.linkedin.com/in/tnpiniiitkalyani/" class="fa fa-linkedin" aria-hidden="true"
-                  target="_blank"></a></li>
-              <li><a href="mailto:tnp@iiitkalyani.ac.in" class="fa fa-google-plus" aria-hidden="true"></a></li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-      
-      </button>
-    </div>
-  </div>
-
-
-  <div id="footer">
-    <div class="heading-footer" style="align-items: center;">
-      <h1 class="fot-head" style="color: whitesmoke;">
-         Placement Cell
-      </h1>
-    </div>
-    <h4 style="text-align: center; color: white; ">Indian Institute Of Information Technology, Kalyani</h4>
-    <h6 style="text-align: center; color: white; ">  Webel IT Park, Near Buddha Park, Kalyani – 741235. Nadia, West Bengal</h6>
-    <div id="footer-container-down">
-      <div id="footer-address" class="flex-footer">
-        <span class="footer-subsection-heading" style="width: 100%; text-align: center;">
-          
-        </span>
-        <div class="footer-subsection-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.7124704321814!2d88.43170931534432!3d22.960814024394352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f894fc95000001%3A0x56bfd0b3bdadb903!2sIndian%20Institute%20of%20Information%20Technology%20Kalyani!5e0!3m2!1sen!2sin!4v1678731580741!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-      <div id="footer-quick-links" class="flex-footer" style="margin-top: 100px;">
-        <span class="footer-subsection-heading" style="width: 100%; text-align: center;">
-          QUICK LINKS
-        </span>
-        <div class="footer-subsection-text">
-          <a href="http://iiitkalyani.ac.in/php/e-Brochure.php" target="_blank" rel="noopener noreferrer">
-            Placement Brochure</a></br>
-          <a href="http://iiitkalyani.ac.in/newfacultypages/faculty1.php" target="_blank"
-            rel="noopener noreferrer">Faculty Members</a></br>
-          <a href="http://iiitkalyani.ac.in/php/administration.php" target="_blank"
-            rel="noopener noreferrer">Administrative Body</a></br>
-        </div>
-      </div>
-      <div id="footer-explore" class="flex-footer" style="margin-top: 100px";>
-        <span class="footer-subsection-heading" style="width: 100%; text-align: center;">
-          EXPLORE
-        </span>
-        <div class="footer-subsection-text">
-          <a href="http://iiitkalyani.ac.in/php/Facilities_landing_page-v6.php" target="_blank"
-            rel="noopener noreferrer">Facilities</a></br>
-          <a href="https://iiitkalyani.ac.in/php/studentachievement.php" target="_blank" rel="noopener noreferrer">
-            Student's Achievements</a></br>
-          <a href="https://iiitkalyani.ac.in/php/Academic_cal.php" target="_blank"
-            rel="noopener noreferrer">Academic Calendar</a></br>
-          <a href="https://iiitkalyani.ac.in/php/proj_spons.php" target="_blank" rel="noopener noreferrer">
-            Sponsored Projects</a></br>
-          <a href="http://iiitkalyani.ac.in/php/reach_iiit_kalyani.php" target="_blank" rel="noopener noreferrer">How to
-            reach IIIT Kalyani</a></br>
-        </div>
-      </div>
-      <div id="footer-contact-us" class="flex-footer" style="margin-top: 100px;" ;>
-        <span class="footer-subsection-heading" style="width: 100%; text-align: center; ;">
-          CONTACT US
-        </span>
-        <div class="footer-subsection-text">
-          <a href="mailto:tnp@iiitkalyani.ac.in">Placement Cell : tnp@iiitkalyani.ac.in</a></br>
-          <a href="mailto:studentcoordinator_placement@iiitkalyani.ac.in">Contact No : +91 8168824544</a></br>
-        </div>
-        <div class="footerIcons">
-          <a href="https://www.facebook.com/iiitkalyani/" class="fb"><i class="fa fa-facebook"></i></a>
-          <a href="https://www.instagram.com/sports_iiitkalyani/" class="insta"><i class="fa fa-instagram"></i></a>
-          <a hre= "https://twitter.com/iiit_kalyani?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/school/indian-institute-of-information-technology-kalyani/mycompany/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-      </div>
       </div>
     </div>
-    <div id="footer-credits" style="font-size: smaller;">
-      Copyright &copy; 2023 IIIT Kalyani. All rights reserved
+
+    <div id="mobile-menu">
+      <a href="#home" onclick="$('#mobile-menu').hide()">Home</a>
+      <a href="#about" onclick="$('#mobile-menu').hide()">About Us</a>
+      <a href="#infrastructure" onclick="$('#mobile-menu').hide()">Infrastructure</a>
+      <a href="#placement-record" onclick="$('#mobile-menu').hide()">Placement Record</a>
+      <a href="#footer" onclick="$('#mobile-menu').hide()">Contact Us</a>
+      <!-- <a href="register.html" onclick="$('#mobile-menu').hide()">Register</a> -->
+      <!-- <a href="javascript:void(0)" onclick="$('#mobile-menu').hide(); showLoginForm()"  class="blue-background">Login</a> -->
     </div>
-  </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <script>
 
-
-
-
-
-  <div class="complete-page-overlay hidden">
-    <div class="form-box login-box">
-      <div class="close-bar">
-        <a href="javascript:void(0)" onclick="closeForm()"><i class="fas fa-times"></i></a>
-      </div>
-
-      <div class="tab-bar">
-        <div class="tab active" onclick="switchToTabPane(this, 0)">Company</div>
-        <div class="tab" onclick="switchToTabPane(this, 1)">Student</div>
-      </div>
-
-      <div class="tab-content">
-        <div class="tab-pane" data-paneid="0" style="padding: 40px 50px; text-align: center;">
-          <img src="img/enterprise.png"
-            style="user-select:none; width: 80px; height: 80px; margin-bottom: 10px; padding: 10px; border: 1.5px solid rgb(32, 67, 128); border-radius : 5px;">
-          <input type="textbox" class="textbox" placeholder="Company Email" style="margin: 10px 0px; width: 100%;">
-          <input type="password" class="textbox" placeholder="Password" style="margin: 10px 0px; width: 100%;">
-          <input type="button" class="button" onclick="companySignUp()" style="width:100%; margin: 10px 0px;"
-            value="Login">
-        </div>
-        <div class="tab-pane" data-paneid="1" style="display: none; padding: 40px 50px; text-align: center;">
-          <img src="img/graduate.png"
-            style="user-select:none; width: 80px; height: 80px; margin-bottom: 10px; padding: 10px; border: 1.5px solid rgb(32, 67, 128); border-radius : 5px;">
-          <input type="textbox" class="textbox" placeholder="Student Email" style="margin: 10px 0px; width: 100%;">
-          <input type="password" class="textbox" placeholder="Password" style="margin: 10px 0px; width: 100%;">
-          <input type="button" class="button" onclick="companySignUp()" style="width:100%; margin: 10px 0px;"
-            value="Login">
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div id="mobile-menu">
-    <a href="#home" onclick="$('#mobile-menu').hide()">Home</a>
-    <a href="#about" onclick="$('#mobile-menu').hide()">About Us</a>
-    <a href="#infrastructure" onclick="$('#mobile-menu').hide()">Infrastructure</a>
-    <a href="#placement-record" onclick="$('#mobile-menu').hide()">Placement Record</a>
-    <a href="#footer" onclick="$('#mobile-menu').hide()">Contact Us</a>
-    <!-- <a href="register.html" onclick="$('#mobile-menu').hide()">Register</a> -->
-    <!-- <a href="javascript:void(0)" onclick="$('#mobile-menu').hide(); showLoginForm()"  class="blue-background">Login</a> -->
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <script type="text/javascript" src="js/main.js"></script>
-  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-  <script>
-    
-    const imageWrapper = document.querySelector('.image-wrapper')
-    const imageItems = document.querySelectorAll('.image-wrapper > *')
-    const imageLength = imageItems.length
-    var perView = 6
-    var perView_1 = 6
-    let totalScroll = 0
-    const delay = 2400
-    function mobile() {
-    if(window.innerWidth < 648) {
-      perView = 3
-      perView_1 = 3
-    }
-    }
-
-    mobile();
-
-    imageWrapper.style.setProperty('--per-view', perView)
-    for (let i = 0; i < perView; i++) {
-      imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
-    }
-
-    let autoScroll = setInterval(scrolling, delay)
-
-    function scrolling() {
-      totalScroll++
-      if (totalScroll == imageLength + 1) {
-        clearInterval(autoScroll)
-        totalScroll = 1
-        imageWrapper.style.transition = '0s'
-        imageWrapper.style.left = '0'
-        autoScroll = setInterval(scrolling, delay)
+      const imageWrapper = document.querySelector('.image-wrapper')
+      const imageItems = document.querySelectorAll('.image-wrapper > *')
+      const imageLength = imageItems.length
+      var perView = 6
+      var perView_1 = 6
+      let totalScroll = 0
+      const delay = 2400
+      function mobile() {
+        if (window.innerWidth < 648) {
+          perView = 3
+          perView_1 = 3
+        }
       }
-      const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24
-      imageWrapper.style.left = `-${totalScroll * widthEl}px`
-      imageWrapper.style.transition = '2.7s'
-    }
 
-  // wrapper-2
-  const imageWrapper_1 = document.querySelector('.image-wrapper_1')
-  const imageItem_1 = document.querySelectorAll('.image-wrapper_1 > *')
-  const iamgeLength_1 = imageItem_1.length
-  
-  let totalscroll_1 = 0
-  const delay_1 = 1600
-  
-  imageWrapper_1.style.setProperty('--per-view', perView_1)
-  for (let i = 0; i < perView_1; i++) {
-    imageWrapper_1.insertAdjacentHTML('beforeend', imageItem_1[i].outerHTML)
-  }
-  
-  let autoScroll_1 = setInterval(scrolling_1, delay_1)
-  
-  function scrolling_1() {
-    totalscroll_1++
-    if (totalscroll_1 == iamgeLength_1 + 1) {
-      clearInterval(autoScroll_1)
-      totalscroll_1 = 1
-      imageWrapper_1.style.transition = '0s'
-      imageWrapper_1.style.left = '0'
-      autoScroll_1 = setInterval(scrolling_1, delay_1)
-    }
-    const widthEl_1 = document.querySelector('.image-wrapper_1 > :first-child').offsetWidth + 24
-    imageWrapper_1.style.left = `-${totalscroll_1 * widthEl_1}px`
-    imageWrapper_1.style.transition = '3s'
-  }
-  </script>
-  <!--   <script type="text/javascript" src="js/main.js"></script> -->
-  <script src="/js/main1.js"></script>
+      mobile();
+
+      imageWrapper.style.setProperty('--per-view', perView)
+      for (let i = 0; i < perView; i++) {
+        imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
+      }
+
+      let autoScroll = setInterval(scrolling, delay)
+
+      function scrolling() {
+        totalScroll++
+        if (totalScroll == imageLength + 1) {
+          clearInterval(autoScroll)
+          totalScroll = 1
+          imageWrapper.style.transition = '0s'
+          imageWrapper.style.left = '0'
+          autoScroll = setInterval(scrolling, delay)
+        }
+        const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24
+        imageWrapper.style.left = `-${totalScroll * widthEl}px`
+        imageWrapper.style.transition = '2.7s'
+      }
+
+      // wrapper-2
+      const imageWrapper_1 = document.querySelector('.image-wrapper_1')
+      const imageItem_1 = document.querySelectorAll('.image-wrapper_1 > *')
+      const iamgeLength_1 = imageItem_1.length
+
+      let totalscroll_1 = 0
+      const delay_1 = 1600
+
+      imageWrapper_1.style.setProperty('--per-view', perView_1)
+      for (let i = 0; i < perView_1; i++) {
+        imageWrapper_1.insertAdjacentHTML('beforeend', imageItem_1[i].outerHTML)
+      }
+
+      let autoScroll_1 = setInterval(scrolling_1, delay_1)
+
+      function scrolling_1() {
+        totalscroll_1++
+        if (totalscroll_1 == iamgeLength_1 + 1) {
+          clearInterval(autoScroll_1)
+          totalscroll_1 = 1
+          imageWrapper_1.style.transition = '0s'
+          imageWrapper_1.style.left = '0'
+          autoScroll_1 = setInterval(scrolling_1, delay_1)
+        }
+        const widthEl_1 = document.querySelector('.image-wrapper_1 > :first-child').offsetWidth + 24
+        imageWrapper_1.style.left = `-${totalscroll_1 * widthEl_1}px`
+        imageWrapper_1.style.transition = '3s'
+      }
+    </script>
+    <!--   <script type="text/javascript" src="js/main.js"></script> -->
+    <script src="/js/main1.js"></script>
 </body>
 
 </html>
