@@ -189,6 +189,7 @@ h2 {
   margin-right: 100px;
 }
 
+
 .header_top-center {
   text-align: center;
   display: flex;
@@ -1892,4 +1893,21 @@ div.footerIcons a:hover{
 }
 .linkedin{
   background:  rgb(14,57,129);
+}
+
+
+.profile-sec{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/* Responsive Adjustments */
+@media screen and (max-width: 1490px) {
+  .profile-sec {
+    flex-wrap: wrap;
+    margin: 2rem;
+    height: auto;
+  }
 }
