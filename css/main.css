@@ -332,6 +332,22 @@ h2 {
     margin-left: 0px;
   }
 }
+/* Existing CSS code ... */
+
+/* Styles for active navbar item */
+#nav a.active {
+  background-color: #204584;
+  color: white !important;
+}
+
+/* Styles for hover effect */
+#nav a:hover {
+  background-color: #204584;
+  color: white !important;
+}
+
+/* Other existing CSS code ... */
+
 
 #header .nav a:hover {
   background-color: #204584;
@@ -1718,6 +1734,7 @@ p.awesome_line {
   font-weight: 700;
   color: #204584;
 }
+
 .item {
   background: #fff;
   text-align: center;
