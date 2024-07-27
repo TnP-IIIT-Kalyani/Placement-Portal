@@ -1110,74 +1110,95 @@
     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <script type="text/javascript" src="js/main.js"></script>
   <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+
+
+
+
   <script>
-    
-    const imageWrapper = document.querySelector('.image-wrapper')
-    const imageItems = document.querySelectorAll('.image-wrapper > *')
-    const imageLength = imageItems.length
-    var perView = 6
-    var perView_1 = 6
-    let totalScroll = 0
-    const delay = 2400
+    const imageWrapper = document.querySelector('.image-wrapper');
+    const imageItems = document.querySelectorAll('.image-wrapper > *');
+    const imageLength = imageItems.length;
+    var perView = 6;
+    var perView_1 = 6;
+    let totalScroll = 0;
+    const delay = 2400;
+
     function mobile() {
-    if(window.innerWidth < 648) {
-      perView = 3
-      perView_1 = 3
-    }
+      if (window.innerWidth < 648) {
+        perView = 3;
+        perView_1 = 3;
+      }
     }
 
     mobile();
 
-    imageWrapper.style.setProperty('--per-view', perView)
+    imageWrapper.style.setProperty('--per-view', perView);
     for (let i = 0; i < perView; i++) {
-      imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
+      imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML);
     }
 
-    let autoScroll = setInterval(scrolling, delay)
+    // wrapper-2
+    const imageWrapper_1 = document.querySelector('.image-wrapper_1');
+    const imageItem_1 = document.querySelectorAll('.image-wrapper_1 > *');
+    const imageLength_1 = imageItem_1.length;
+
+    let totalScroll_1 = 0;
+    const delay_1 = 2400;
+
+    imageWrapper_1.style.setProperty('--per-view', perView_1);
+    for (let i = 0; i < perView_1; i++) {
+      imageWrapper_1.insertAdjacentHTML('beforeend', imageItem_1[i].outerHTML);
+    }
 
     function scrolling() {
-      totalScroll++
-      if (totalScroll == imageLength + 1) {
-        clearInterval(autoScroll)
-        totalScroll = 1
-        imageWrapper.style.transition = '0s'
-        imageWrapper.style.left = '0'
-        autoScroll = setInterval(scrolling, delay)
+      totalScroll++;
+      const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24;
+
+      if (totalScroll > imageLength) {
+        totalScroll = 1;
+        imageWrapper.style.transition = 'none';
+        imageWrapper.style.left = '0';
+        imageWrapper.offsetHeight; // Trigger reflow
       }
-      const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24
-      imageWrapper.style.left = `-${totalScroll * widthEl}px`
-      imageWrapper.style.transition = '2.7s'
+
+      imageWrapper.style.left = `-${totalScroll * widthEl}px`;
+      imageWrapper.style.transition = '3s';
     }
 
-  // wrapper-2
-  const imageWrapper_1 = document.querySelector('.image-wrapper_1')
-  const imageItem_1 = document.querySelectorAll('.image-wrapper_1 > *')
-  const iamgeLength_1 = imageItem_1.length
-  
-  let totalscroll_1 = 0
-  const delay_1 = 1600
-  
-  imageWrapper_1.style.setProperty('--per-view', perView_1)
-  for (let i = 0; i < perView_1; i++) {
-    imageWrapper_1.insertAdjacentHTML('beforeend', imageItem_1[i].outerHTML)
-  }
-  
-  let autoScroll_1 = setInterval(scrolling_1, delay_1)
-  
-  function scrolling_1() {
-    totalscroll_1++
-    if (totalscroll_1 == iamgeLength_1 + 1) {
-      clearInterval(autoScroll_1)
-      totalscroll_1 = 1
-      imageWrapper_1.style.transition = '0s'
-      imageWrapper_1.style.left = '0'
-      autoScroll_1 = setInterval(scrolling_1, delay_1)
+    function scrolling_1() {
+      totalScroll_1++;
+      const widthEl_1 = document.querySelector('.image-wrapper_1 > :first-child').offsetWidth + 24;
+
+      if (totalScroll_1 > imageLength_1) {
+        totalScroll_1 = 1;
+        imageWrapper_1.style.transition = 'none';
+        imageWrapper_1.style.left = '0';
+        imageWrapper_1.offsetHeight; // Trigger reflow
+      }
+
+      imageWrapper_1.style.left = `-${totalScroll_1 * widthEl_1}px`;
+      imageWrapper_1.style.transition = '3s';
     }
-    const widthEl_1 = document.querySelector('.image-wrapper_1 > :first-child').offsetWidth + 24
-    imageWrapper_1.style.left = `-${totalscroll_1 * widthEl_1}px`
-    imageWrapper_1.style.transition = '3s'
-  }
+
+    let autoScroll = setInterval(() => {
+      scrolling();
+      scrolling_1();
+    }, delay);
+
+    // Ensure both wrappers synchronize on window resize
+    window.addEventListener('resize', () => {
+      mobile();
+      clearInterval(autoScroll);
+      autoScroll = setInterval(() => {
+        scrolling();
+        scrolling_1();
+      }, delay);
+    });
+
   </script>
+
+
+
   <!--   <script type="text/javascript" src="js/main.js"></script> -->
   <script src="/js/main1.js"></script>
 
