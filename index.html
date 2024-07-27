@@ -1,11 +1,8 @@
-
 <!doctype html>
 <html>
 
 <head>
-  <title>
-    Placement Cell, IIIT Kalyani
-  </title>
+  <title>Placement Cell, IIIT Kalyani</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#204584">
   <meta name="msapplication-navbutton-color" content="#204584">
@@ -16,37 +13,42 @@
   <link rel="stylesheet" href="css/contact-card.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawChart);
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['bar']});
+    google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['BATCH', 'Highest Package in LPA',  'Average Package in LPA', ],
-          ['2014-18', 10, 3],
-          ['2015-19', 10, 3.4],
-          ['2016-20', 17,  6.2],
-          ['2017-21', 17,  8],
-          ['2018-22', 15, 10.73],
-          ['2019-23', 26.41, 12.7],
-          ['2020-24', 44, 11.47]
-        ]);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['BATCH', 'Highest Package in LPA', 'Average Package in LPA'],
+        ['2014-18', 10, 3],
+        ['2015-19', 10, 3.4],
+        ['2016-20', 17, 6.2],
+        ['2017-21', 17, 8],
+        ['2018-22', 15, 10.73],
+        ['2019-23', 26.41, 12.7],
+        ['2020-24', 44, 11.47]
+      ]);
 
-        var options = {
-          chart: {
-            title: 'Placement Statistics',
-            
-          },
-          bars: 'vertical' // Required for Material Bar Charts.
-        };
+      var options = {
+        chart: {
+          title: 'Placement Statistics',
+        },
+        bars: 'vertical' // Required for Material Bar Charts.
+      };
 
-        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
-
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-      }
-    </script>
-    
+      var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
+  </script>
+  <style>
+    .nav-link.active {
+      background-color: #204584;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
@@ -57,14 +59,14 @@
       </div>
     </div>
     <div id="nav" class="nav">
-      <a href="#header_top">Home</a>
-      <a href="#about">About Us</a>
-      <a href="#whyus">Why Us</a>
+      <a href="#header_top" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#whyus" class="nav-link">Why Us</a>
 
-      <a href="#recruiters">Past Recruiters</a>
-      <a href="#placement-record">Placement Record</a>
-      <a href="#infrastructure">Infrastructure</a>
-      <a href="#contactus">Contact Us</a>
+      <a href="#recruiters" class="nav-link">Past Recruiters</a>
+      <a href="#placement-record" class="nav-link">Placement Record</a>
+      <a href="#infrastructure" class="nav-link">Infrastructure</a>
+      <a href="#contactus" class="nav-link">Contact Us</a>
       <!-- <a href="register.html">Register</a> -->
       <!-- <a href="javascript:void(0)" onclick="showLoginForm()"  class="blue-background">Login</a> -->
     </div>
@@ -1196,6 +1198,25 @@
   </script>
   <!--   <script type="text/javascript" src="js/main.js"></script> -->
   <script src="/js/main1.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      // Add scroll event listener
+      $(window).on('scroll', function() {
+        var scrollPos = $(document).scrollTop();
+        $('.nav-link').each(function() {
+          var currLink = $(this);
+          var refElement = $(currLink.attr('href'));
+          if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('.nav-link').removeClass('active');
+            currLink.addClass('active');
+          } else {
+            currLink.removeClass('active');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
