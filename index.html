@@ -1,11 +1,8 @@
-
 <!doctype html>
 <html>
 
 <head>
-  <title>
-    Placement Cell, IIIT Kalyani
-  </title>
+  <title>Placement Cell, IIIT Kalyani</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#204584">
   <meta name="msapplication-navbutton-color" content="#204584">
@@ -16,37 +13,42 @@
   <link rel="stylesheet" href="css/contact-card.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawChart);
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['bar']});
+    google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['BATCH', 'Highest Package in LPA',  'Average Package in LPA', ],
-          ['2014-18', 10, 3],
-          ['2015-19', 10, 3.4],
-          ['2016-20', 17,  6.2],
-          ['2017-21', 17,  8],
-          ['2018-22', 15, 10.73],
-          ['2019-23', 26.41, 12.7],
-          ['2020-24', 44, 11.47]
-        ]);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['BATCH', 'Highest Package in LPA', 'Average Package in LPA'],
+        ['2014-18', 10, 3],
+        ['2015-19', 10, 3.4],
+        ['2016-20', 17, 6.2],
+        ['2017-21', 17, 8],
+        ['2018-22', 15, 10.73],
+        ['2019-23', 26.41, 12.7],
+        ['2020-24', 44, 11.47]
+      ]);
 
-        var options = {
-          chart: {
-            title: 'Placement Statistics',
-            
-          },
-          bars: 'vertical' // Required for Material Bar Charts.
-        };
+      var options = {
+        chart: {
+          title: 'Placement Statistics',
+        },
+        bars: 'vertical' // Required for Material Bar Charts.
+      };
 
-        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
-
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-      }
-    </script>
-    
+      var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
+  </script>
+  <style>
+    .nav-link.active {
+      background-color: #204584;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
@@ -57,14 +59,14 @@
       </div>
     </div>
     <div id="nav" class="nav">
-      <a href="#header_top">Home</a>
-      <a href="#about">About Us</a>
-      <a href="#whyus">Why Us</a>
+      <a href="#header_top" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#whyus" class="nav-link">Why Us</a>
 
-      <a href="#recruiters">Past Recruiters</a>
-      <a href="#placement-record">Placement Record</a>
-      <a href="#infrastructure">Infrastructure</a>
-      <a href="#contactus">Contact Us</a>
+      <a href="#recruiters" class="nav-link">Past Recruiters</a>
+      <a href="#placement-record" class="nav-link">Placement Record</a>
+      <a href="#infrastructure" class="nav-link">Infrastructure</a>
+      <a href="#contactus" class="nav-link">Contact Us</a>
       <!-- <a href="register.html">Register</a> -->
       <!-- <a href="javascript:void(0)" onclick="showLoginForm()"  class="blue-background">Login</a> -->
     </div>
@@ -106,9 +108,16 @@
     <div>
       <div class="home-text">
         
+        <span class="heading" style="font-size: 35px;">You can fill the connection </br> form</span><br>
+        
+          <a href="https://forms.gle/RzmwEGsmHEd3hFDQ9" target="_blank" class="brochure-link">Google Form&nbsp;&nbsp;<i class="fa fa-file-text" aria-hidden="true"></i></a>
+          <br>
+      </div>
+      <div class="home-text">
+        
         <span class="heading" style="font-size: 35px;"><br>Training and Placement Cell, </br> IIIT Kalyani</span><br>
         
-          <a href="img/brochure/placement_brochure_2022.pdf" target="_blank" class="brochure-link">Placement
+          <a href="img/brochure/Placement-2025.pdf" target="_blank" class="brochure-link">Placement
             Brochure&nbsp;&nbsp;<i class="fas fa-download"></i></a>
           <br>
           <!-- <a href="#" class="download-link">Placement Invitation&nbsp;&nbsp;<i class="fas fa-download"></i></a> -->
@@ -122,8 +131,12 @@
 
   <div id="about" class="section">
     <div class="about-text">
-      <h3 class="headinggs heading2">Indian Institute of Information Technology Kalyani</h3>
-      <p style="line-height: 180%; font-size: 1rem; margin-top: 10%;">
+      <a href="https://iiitkalyani.ac.in/" target="_blank" class="brochure-link" style="white-space: nowrap; text-decoration: none;">
+        <h3 class="headinggs heading2" style="display: inline; margin: 0;">Indian Institute of Information Technology Kalyani</h3>
+        &nbsp;&nbsp;<i class="fa fa-file-text" aria-hidden="true"></i>
+    </a>
+      
+      <p style="line-height: 200%; font-size: 1rem; margin-top: 5%;"> 
         A Memorandum of Understanding (MoU) was signed in 2014 between the Indian government, West Bengal government, and industry partners (namely Coal India Limited, Rolta Foundation, and Webel) to establish IIIT Kalyani under the Public Private Partnership (PPP) model. Since 2017, IIIT Kalyani has become an Institute of National Importance.
         <br> <br>
         The Institute currently offers a 4-year B.Tech programme in Computer Science and Engineering, with the goal of providing high-quality technical education to students and equipping them with the necessary skills to tackle complex industry problems in the modern world. Its faculty members, who are young and dynamic doctorates from prestigious institutions and universities in India and abroad, guide over 50 research scholars towards obtaining their PhD degrees. As a result, the Institute has developed into a hub of research excellence over time.
@@ -359,9 +372,6 @@
         </div>
         <div class="slide">
           <img src="./img/redsky_technologies.png" alt="" >
-        </div>
-        <div class="slide">
-          <img src="./img/quolum.png" alt="" >
         </div>
         <div class="slide">
           <img src="./img/publicSapient.png" alt="" >
@@ -751,11 +761,9 @@
           to having you on our campus and hope to establish a
           rewarding partnership.
         </div>
-        <!-- <div>
-            
-          </div> -->
+        
         <div class="img-div">
-          <img src="img/Chimony-Ghosh.jpg" class="center" style="width: 70%; height: max-content; margin: 15%;">
+          <img src="img/chinmoy.jpg" class="center" style="width: 70%; height: max-content; margin: 15%;">
           <div>
             <div style="font-size: 15px; font-weight: bold; text-align:center;">Mr. Chinmoy Ghosh</div>
             <div style="text-align: center;"> Assistant Registrar (TnP Cell), IIIT Kalyani </div>
@@ -810,16 +818,14 @@
 
 <div id="coordinators-part">
   <h2 class="headinggs" style="width: 90%; margin:0 auto;">Student Coordinators</h2>
-<div class="justify-evenly" id="coordinators">
 
-    
+<div class="justify-evenly" id="coordinators">
   <div class="card ">
     <img src="img/coord/1719335912730.jpg" alt="John" style="width:100%">
     <h2 style="padding-top: 2rem;"> Rajesh Kumbhakarn</h2>
     <p class="title">Student Coordinator</p>
     <p>IIIT Kalyani</p>
     <div style="margin: 24px 0;">
-     
       <a href="https://www.linkedin.com/in/rajeshkumbhakarn/"><i class="fa fa-linkedin"></i></a>  
     </div>   
   </div>      
@@ -829,12 +835,11 @@
     <p class="title">Student Coordinator</p>
     <p>IIIT Kalyani</p>
     <div style="margin: 24px 0;">
-     
       <a href="https://www.linkedin.com/in/sarath-sai-mandala-49025a22b/"><i class="fa fa-linkedin"></i></a>  
     </div>   
   </div>
   <div class="card">
-    <img src="img/coord/Yash_new.jpg" aljpgt="John" style="width:100%">
+    <img src="img/coord/Yash_Image_new.jpg" aljpgt="John" style="width:100%">
     <h2 style="padding-top: 2rem;"> Yash Rastogi </h2>
     <p class="title">Student Coordinator</p>
     <p>IIIT Kalyani</p>
@@ -1026,7 +1031,7 @@
         </span>
         <div class="footer-subsection-text">
           <a href="mailto:tnp@iiitkalyani.ac.in">Placement Cell : tnp@iiitkalyani.ac.in</a></br>
-          <a href="mailto:studentcoordinator_placement@iiitkalyani.ac.in">Contact No : +91 8168824544</a></br>
+          <a href="mailto:studentcoordinator_placement@iiitkalyani.ac.in">Contact No : +91 8168824544, +91 7278386953</a>
         </div>
         <div class="footerIcons">
           <a href="https://www.facebook.com/iiitkalyani/" class="fb"><i class="fa fa-facebook"></i></a>
@@ -1175,6 +1180,25 @@
   </script>
   <!--   <script type="text/javascript" src="js/main.js"></script> -->
   <script src="/js/main1.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      // Add scroll event listener
+      $(window).on('scroll', function() {
+        var scrollPos = $(document).scrollTop();
+        $('.nav-link').each(function() {
+          var currLink = $(this);
+          var refElement = $(currLink.attr('href'));
+          if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('.nav-link').removeClass('active');
+            currLink.addClass('active');
+          } else {
+            currLink.removeClass('active');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
